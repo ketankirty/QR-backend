@@ -6,7 +6,7 @@ const contactSchema = new mongoose.Schema({
   phone: { type: String },
   subject: { type: String, required: true },
   message: { type: String, required: true },
-  createdAt: { type: Date, default: Date.now }
+  createdAt: { type: Date, default: Date.now },
 });
 
 export default mongoose.model("Contact", contactSchema);
